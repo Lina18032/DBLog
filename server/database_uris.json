@@ -1,0 +1,7 @@
+{
+    "USINE": "mysql+pymysql://root:new_password_here@localhost:3306/usine",
+    "PHARMA": "postgresql://postgres:lina@localhost:5432/pharma",
+    "ALGIERS": "postgresql://postgres:lina@localhost:5432/algiers",
+    "ALEMBICDB": "postgresql://postgres:lina@localhost:5432/alembicdb",
+    "POSTGRES": "postgresql://postgres:lina@localhost:5432/postgres"
+}

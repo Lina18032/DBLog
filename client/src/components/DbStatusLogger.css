@@ -1,0 +1,35 @@
+.text {
+  color: #ef4444;              /* text-red-500 */
+  font-size: 0.875rem;         /* text-sm */
+  font-style: italic;          /* italic */
+  text-align: center;          /* text-center */
+  width: 100%;                 /* w-full */
+  overflow: hidden;            /* overflow-hidden */
+  text-overflow: ellipsis;     /* text-ellipsis */
+  white-space: normal;
+  word-break: break-word;
+      /* whitespace-nowrap */
+}
+
+
+
+.card-error {
+  background-color: #fef2f2; /* Tailwind's red-50 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* soft shadow */
+}
+
+.card-success {
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* soft shadow */
+}
+.icon-up {
+  color: #22c55e; /* Tailwind's green-500 */
+  font-size: 1.25rem;
+}
+
+.icon-down {
+  color: #ef4444; /* Tailwind's red-500 */
+  font-size: 1.25rem;
+}
+

@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+
+
+
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+
+.input-field {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+
+.tooltip {
+  position: fixed;
+  top: 150px; /* Slightly below the button */
+  right: 30px;
+
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  z-index: 1001;
+}
+
