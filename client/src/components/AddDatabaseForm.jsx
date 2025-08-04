@@ -7,10 +7,6 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
-
-
-
-
 export default function AddDatabaseForm({ onClose ,onAdd }) {
   const [formData, setFormData] = useState({
     dbname: "",

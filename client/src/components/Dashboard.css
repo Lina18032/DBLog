@@ -1,0 +1,47 @@
+/* Dashboard.css */
+.dashboard-container {
+  display: flex;
+  width: 95vw;
+  height: 95vh;
+}
+
+.dashboard-left-section {
+  width: 33.33%;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.dashboard-card {
+  height: 30vh;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Optional: Background colors for each card */
+.card-blue {
+  background-color: #EAF6FF;
+}
+.card-red {
+  background-color: #FADADD;
+}
+.card-green {
+  background-color: #DFF5E1;
+}
+
+.dashboard-right-section {
+  width: 66.66%;
+  padding: 40px;
+  background-color: #ffffff;
+}

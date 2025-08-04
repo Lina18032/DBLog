@@ -1,7 +1,7 @@
 import React, { useState ,useEffect} from "react";
 import "./DbStatusLogger.css";
 import { FaAngleDoubleUp, FaAngleDoubleDown } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 
 
 
@@ -44,9 +44,10 @@ useEffect(() => {
       .catch((err) => console.error("Error fetching table count:"));
   }, [name]);
 
-  return (
-<div
-  className={`w-[90%] m-[15px] p-4 max-w-[500px] h-[30vh] mt-8 gap-4 rounded-[10px] flex flex-col justify-center items-center font-normal text-[1.25rem] transition-transform duration-200 ease-in-out hover:scale-105 overflow-hidden ${
+
+  const cardContent = (
+  <div
+  className={`w-[100%] mr-[10px] ml-[10px] max-w-[500px] h-[30vh] mt-8 gap-4 rounded-[10px] flex flex-col justify-center items-center font-normal text-[1.25rem] transition-transform duration-200 ease-in-out hover:scale-103 overflow-hidden ${
     getStatusClass() === "error" ? "card-error" : "card-success"
   }`}
 >
@@ -79,6 +80,13 @@ useEffect(() => {
 </div>
 
     </div>
+  )
+  return (
+
+
+    <Link to={`/db/${name}`}   style={{textDecoration: 'none',color: 'inherit', display: 'block',  width: '100%',}}>
+      {cardContent}
+    </Link>
   );
 }
 

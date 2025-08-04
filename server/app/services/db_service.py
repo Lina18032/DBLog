@@ -6,12 +6,12 @@ from app.utils.helpers import paginate_dict
 import json
 from sqlalchemy.engine.url import make_url
 from urllib.parse import urlparse
+from sqlalchemy.engine import URL
 import urllib
 
 
 
 def add_database_uri():
-    from sqlalchemy.engine import URL  # Moved to top in production code
     data = request.json
     name = data.get("name", "").upper()
     uri = data.get("uri")
@@ -37,7 +37,7 @@ def add_database_uri():
             query = dict(url.query)
             query["driver"] = "ODBC Driver 17 for SQL Server"
             query["Encrypt"] = "yes"
-            query["TrustServerCertificate"] = "no"
+            query["TrustServerCertificate"] = "yes"
             query["Connection Timeout"] = "30"
             uri = str(URL.create(
                 drivername="mssql+pyodbc",

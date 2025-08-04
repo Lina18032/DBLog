@@ -13,8 +13,9 @@
 
 
 
+
 .card-error {
-  background-color: #fef2f2; /* Tailwind's red-50 */
+  background-color: #fef2f2;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* soft shadow */
 }
 
@@ -32,4 +33,5 @@
   color: #ef4444; /* Tailwind's red-500 */
   font-size: 1.25rem;
 }
+
 

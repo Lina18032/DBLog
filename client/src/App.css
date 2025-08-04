@@ -30,9 +30,29 @@ body {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
+.modal-contentt form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
 
 .input-field {
   padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.input-fieldd {
+  width: 250px;
+  padding: 0.5rem;
+  margin-bottom: 0.8rem;
   border: 1px solid #ccc;
   border-radius: 8px;
 }
@@ -49,3 +69,60 @@ body {
   z-index: 1001;
 }
 
+.responsive-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* grid-cols-3 */
+  gap: 1rem;                                      /* gap-5 */
+  justify-items: center;                            /* justify-items-center */
+  padding: 2rem;                                     /* p-8 */
+  min-height: 60vh;                                  /* min-h-[65vh] */
+}
+
+/* Medium screens (≤768px) — md:grid-cols-2 */
+@media (max-width: 768px) {
+  .responsive-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Small screens (≤640px) — sm:grid-cols-1 */
+@media (max-width: 640px) {
+  .responsive-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+form p {
+  text-align: center;
+}
+.form-button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.form-button.cancel {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.form-button.cancel:hover {
+  background-color: #ccc;
+}
+
+.form-button.save {
+  background-color: #0058A1;
+  color: white;
+}
+
+.form-button.save:hover {
+  background-color: #004080;
+}
+
+
+.link-no-style {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}

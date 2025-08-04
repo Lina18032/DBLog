@@ -1,2 +1,16 @@
-.env
-venv
+# Python envs
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+env/
+venv/
+cleanenv/
+
+# Node
+node_modules/
+*.log
+
+# OS
+.DS_Store

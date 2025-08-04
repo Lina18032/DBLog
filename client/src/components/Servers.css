@@ -1,0 +1,73 @@
+.servers-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.servers-main {
+  flex-grow: 1;
+  padding-top: 1vh;
+  text-align: center;
+  padding-right: 1.2vh;
+}
+
+.servers-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 5vw;
+}
+
+.autocomplete-wrapper {
+  width: 200%;
+  max-width: 600px;
+}
+
+@media (max-width: 900px) {
+  .autocomplete-wrapper {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .autocomplete-wrapper {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .autocomplete-wrapper {
+    max-width: 100%;
+  }
+}
+
+.autocomplete-wrapper .MuiInputBase-root {
+  height: 36px;
+  font-size: 14px;
+}
+
+.autocomplete-wrapper .MuiAutocomplete-option {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .autocomplete-wrapper .MuiAutocomplete-option {
+    font-size: 0.75rem;
+  }
+}
+
+
+.server-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem; 
+  justify-items: center; 
+  padding: 2rem;
+  min-height: 65vh;    
+}
+
+.pagination-container {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
